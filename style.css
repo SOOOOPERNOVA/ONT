@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Pretendard', 'Inter', sans-serif;
+    color: #f0f0f0;
+    font-weight: 300;
+    background-color: #0a0a0a;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('images/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    transform: scale(1.1);
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.info-section {
+    flex-basis: 45%;
+    min-width: 320px;
+    padding: 5vmax;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right,
+        rgba(10, 10, 10, 0.85) 0%,
+        rgba(10, 10, 10, 0.6) 60%,
+        rgba(10, 10, 10, 0) 100%);
+    padding-top: 8vmax;
+    padding-bottom: 5vmax;
+}
+
+.info-section h1 {
+    margin: 0 0 3rem 0;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+
+.company-intro p {
+    font-family: 'Pretendard', 'Inter', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.9;
+    max-width: 540px;
+    margin-bottom: 1.2rem;
+    word-break: keep-all;
+    letter-spacing: -0.01em;
+}
+
+.company-intro strong {
+    font-weight: 700;
+}
+
+.links {
+    margin-top: 4rem;
+}
+
+.links a.studio-link {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: #f0f0f0;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(240, 240, 240, 0.4);
+    transition: all 0.3s ease;
+}
+
+.links a.studio-link:hover {
+    color: #fff;
+    border-bottom-color: #fff;
+    letter-spacing: 0.15em;
+}
+
+.visual-section {
+    flex-basis: 55%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .info-section {
+        flex-basis: auto;
+        padding: 10vmin;
+        background: linear-gradient(to bottom,
+            rgba(10, 10, 10, 0.85) 0%,
+            rgba(10, 10, 10, 0.6) 70%,
+            rgba(10, 10, 10, 0) 100%);
+    }
+    .visual-section {
+        flex-basis: 250px;
+        min-height: 250px;
+    }
+}
