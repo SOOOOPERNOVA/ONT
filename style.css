@@ -26,7 +26,7 @@ body::before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(8px);
+    filter: blur(12px);
     transform: scale(1.1);
     z-index: 0;
 }
@@ -104,25 +104,6 @@ body::before {
     flex-basis: 55%;
 }
 
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-    .info-section {
-        flex-basis: auto;
-        padding: 10vmin;
-        padding-top: 22vmin;      
-        background: linear-gradient(to bottom,
-            rgba(10, 10, 10, 0.85) 0%,
-            rgba(10, 10, 10, 0.6) 70%,
-            rgba(10, 10, 10, 0) 100%);
-    }
-    .visual-section {
-        flex-basis: 250px;
-        min-height: 250px;
-    }
-}
-
 /* 우측 상단 언어 전환 */
 .lang-switch {
     position: fixed;
@@ -148,4 +129,24 @@ body::before {
 
 .lang-switch a:hover {
     opacity: 0.7;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .info-section {
+        flex-basis: auto;
+        padding: 10vmin;
+        padding-top: 22vmin;      
+        background: linear-gradient(to bottom,
+            rgba(10, 10, 10, 0.85) 0%,
+            rgba(10, 10, 10, 0.6) 70%,
+            rgba(10, 10, 10, 0) 100%);
+    }
+    .visual-section {
+        flex-basis: 250px;
+        min-height: 250px;
+    }
 }
