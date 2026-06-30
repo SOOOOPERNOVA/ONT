@@ -50,7 +50,6 @@ body::before{
   font-size:2rem;
   letter-spacing:0.3em;
   color:var(--ink);
-  padding-left:.6em;
   text-decoration:none; 
   cursor:pointer; 
 }
