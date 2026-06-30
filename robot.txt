@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ont.co.kr/sitemap.xml
