@@ -168,7 +168,7 @@ body::before{
 
   .hero{
     min-height:auto;
-    padding:24vh var(--pad) 0;
+    padding:22vh var(--pad) 0;
     align-items:flex-end;
     text-align:right;
   }
@@ -177,7 +177,7 @@ body::before{
     line-height:1.15;
   }
   .hero__sub{
-    margin-top:14rem;        /* 헤드라인에서 떨어뜨려 메뉴 쪽으로 */
+    margin-top:8rem;        /* 헤드라인에서 떨어뜨려 메뉴 쪽으로 */
     text-align:left;
     align-self:flex-start;
   }
@@ -191,7 +191,7 @@ body::before{
     padding:0 var(--pad) 4rem;
   }
   .studio-link{
-    font-size:2rem;
+    font-size:1.3rem;
     letter-spacing:.08em;
   }
 
