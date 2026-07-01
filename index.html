@@ -25,15 +25,29 @@
     <meta name="naver-site-verification" content="63fb73f5393a5606ff315f7ee2c3b5453afe2156" />
     <link rel="icon" type="image/png" href="images/favicon.png">
 
-    <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization", "WebSite",
-  "name": "오앤티 ONT",
-  "alternateName": ["오앤티", "ONT"],
-  "url": "https://ont.co.kr",
-  "description": "웹·앱 개발, 시각 디자인, 미디어 광고, 커머스까지! 잘 만들고, 잘 보이게 만드는 ONT 오앤티!",
-  "knowsAbout": ["웹사이트 제작", "홈페이지 제작", "웹 개발", "앱 개발", "랜딩페이지 제작", "기업 홈페이지", "쇼핑몰 제작", "브랜드 디자인", "3D 포스터", "아나몰픽", "콘텐츠 제작", "미디어 광고", "PPL 대행사", "PPL 광고", "공동구매 벤더"]
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://ont.co.kr/#organization",
+      "name": "오앤티 ONT",
+      "alternateName": ["오앤티", "ONT"],
+      "url": "https://ont.co.kr",
+      "logo": "https://ont.co.kr/images/og.png",
+      "description": "웹·앱 개발, 시각 디자인, 미디어 광고, 커머스까지! 잘 만들고, 잘 보이게 만드는 ONT 오앤티!",
+      "knowsAbout": ["웹사이트 제작", "홈페이지 제작", "웹 개발", "앱 개발", "랜딩페이지 제작", "기업 홈페이지", "쇼핑몰 제작", "브랜드 디자인", "3D 포스터", "아나몰픽", "콘텐츠 제작", "미디어 광고", "PPL 대행사", "PPL 광고", "공동구매 벤더"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ont.co.kr/#website",
+      "name": "오앤티 ONT",
+      "alternateName": ["오앤티", "ONT"],
+      "url": "https://ont.co.kr",
+      "publisher": { "@id": "https://ont.co.kr/#organization" }
+    }
+  ]
 }
 </script>
 </head>
